@@ -1,0 +1,18 @@
+GITHUB: https://github.com/Regiiix
+FACEBOOK: https://www.facebook.com/reginald224/
+GMAIL: reginaldcano@gmail.com
+FULL NAME: CANO, REGINALD AMOLO
+AGE: 21 YEARS OLD
+COLLEGE: SAINT JOSEPH COLLEGE
+CURRENT STATUS: THIRD-YEAR COMPUTER SCIENCE STUDENT
+BIRTHDATE: MAY 11, 2004
+SENIOR HIGH SCHOOL: SAINT JOSEPH COLLEGE WITH STEM STRAND
+JUNIOR HIGH SCHOOL: SAINT JOSEPH COLLEGE 
+ELEMENTARY: ROSA DE ESPINA DE YñIGUEZ MEMORIAL SCHOOL
+
+
+PERSONAL PROJECTS: https://github.com/Regiiix/Student-Management-System.git
+                   https://github.com/Regiiix/Text-Portrait.git
+
+SHARED PROJECTS: https://github.com/fbasa/soft-eng.git
+          
