@@ -905,3 +905,57 @@ section {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Content visibility for below-the-fold sections - reduces initial render work */
+.work, .about, .skills, .achievements, .contact {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+}
+
+/* Reserve space for lazy-loaded images to prevent layout shift */
+.project-image img,
+.achievement-item img {
+    aspect-ratio: 4/3;
+    background-color: var(--bg-secondary);
+}
+
+.achievement-item img {
+    aspect-ratio: 3/2;
+}
+
+/* Hero image - LCP optimization */
+.hero-image img {
+    aspect-ratio: 4/5;
+    background-color: var(--bg-secondary);
+    will-change: transform, filter;
+}
+
+/* Optimize font rendering */
+body {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce animation work for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .marquee-track {
+        animation: none;
+    }
+    
+    .hero-image img,
+    .hero-image::before {
+        animation: none;
+    }
+}

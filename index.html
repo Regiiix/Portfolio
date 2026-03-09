@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reginald Cano — Developer</title>
+    
+    <!-- DNS Prefetch & Preconnect for faster resource discovery -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload LCP image for faster Largest Contentful Paint -->
+    <link rel="preload" as="image" href="assets/portfolio_profile.jpg" fetchpriority="high">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/ico.ico" type="image/x-icon">
     <meta name="description" content="Reginald Cano — Computer Science student and aspiring web developer crafting digital experiences with HTML, CSS, JavaScript, PHP, and more.">
@@ -36,6 +48,7 @@
         <a href="assets/Resume.pdf" target="_blank" class="nav-cta">Resume ↗</a>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -47,7 +60,8 @@
             <p class="hero-tagline">Building digital experiences with code.<br>Based in Maasin City, Philippines.</p>
         </div>
         <div class="hero-image">
-            <img src="assets/portfolio_profile.jpg" alt="Reginald Cano">
+            <!-- LCP element: high priority, no lazy loading -->
+            <img src="assets/portfolio_profile.jpg" alt="Reginald Cano" width="400" height="500" fetchpriority="high" decoding="async">
         </div>
         <div class="hero-scroll">
             <span>Scroll</span>
@@ -64,7 +78,7 @@
         <div class="projects-grid">
             <article class="project-card featured">
                 <div class="project-image">
-                    <img src="assets/student_management_system.png" alt="Student Management System">
+                    <img src="assets/student_management_system.png" alt="Student Management System" width="400" height="300" loading="lazy" decoding="async">
                 </div>
                 <div class="project-info">
                     <span class="project-year">2025</span>
@@ -79,7 +93,7 @@
             </article>
             <article class="project-card">
                 <div class="project-image">
-                    <img src="assets/Interactive-Pomodoro-Zen-Space_.png" alt="Interactive Pomodoro Zen Space">
+                    <img src="assets/Interactive-Pomodoro-Zen-Space_.png" alt="Interactive Pomodoro Zen Space" width="400" height="300" loading="lazy" decoding="async">
                 </div>
                 <div class="project-info">
                     <span class="project-year">2026</span>
@@ -94,7 +108,7 @@
             </article>
             <article class="project-card">
                 <div class="project-image">
-                    <img src="assets/team_software_project.png" alt="Team Software Project">
+                    <img src="assets/team_software_project.png" alt="Team Software Project" width="400" height="300" loading="lazy" decoding="async">
                 </div>
                 <div class="project-info">
                     <span class="project-year">2024</span>
@@ -182,44 +196,44 @@
         <div class="achievements-marquee">
             <div class="marquee-track">
                 <div class="achievement-item">
-                    <img src="assets/CCSQUIZCHAMPION.jpg" alt="CCS Quiz Champion" loading="lazy">
+                    <img src="assets/CCSQUIZCHAMPION.jpg" alt="CCS Quiz Champion" width="300" height="200" loading="lazy" decoding="async">
                     <span>CCS Quiz Champion</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(1stYear-FirstSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(1stYear-FirstSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 1st Year First Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(1stYear-SecondSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(1stYear-SecondSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 1st Year Second Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(SecondYear-SecondSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(SecondYear-SecondSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 2nd Year Second Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/BestinResearchPresenter.jpg" alt="Best in Research Presenter" loading="lazy">
+                    <img src="assets/BestinResearchPresenter.jpg" alt="Best in Research Presenter" width="300" height="200" loading="lazy" decoding="async">
                     <span>Best in Research Presenter (SHS)</span>
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="achievement-item">
-                    <img src="assets/CCSQUIZCHAMPION.jpg" alt="CCS Quiz Champion" loading="lazy">
+                    <img src="assets/CCSQUIZCHAMPION.jpg" alt="CCS Quiz Champion" width="300" height="200" loading="lazy" decoding="async">
                     <span>CCS Quiz Champion</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(1stYear-FirstSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(1stYear-FirstSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 1st Year First Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(1stYear-SecondSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(1stYear-SecondSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 1st Year Second Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/DeansListerPhoto(SecondYear-SecondSemester).jpg" alt="Dean's Lister" loading="lazy">
+                    <img src="assets/DeansListerPhoto(SecondYear-SecondSemester).jpg" alt="Dean's Lister" width="300" height="200" loading="lazy" decoding="async">
                     <span>Dean's Lister — 2nd Year Second Semester</span>
                 </div>
                 <div class="achievement-item">
-                    <img src="assets/BestinResearchPresenter.jpg" alt="Best in Research Presenter" loading="lazy">
+                    <img src="assets/BestinResearchPresenter.jpg" alt="Best in Research Presenter" width="300" height="200" loading="lazy" decoding="async">
                     <span>Best in Research Presenter (SHS)</span>
                 </div>
             </div>
@@ -239,6 +253,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
